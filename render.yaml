@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: thumbnail-bot
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python thumbnail_bot.py
+    envVars:
+      - key: BOT_TOKEN
+        sync: false          # you will paste this in the Render dashboard
+      - key: WEBHOOK_URL
+        sync: false          # you will paste this after first deploy (see instructions)
