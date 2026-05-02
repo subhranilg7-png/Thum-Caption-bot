@@ -1,2 +1,4 @@
-python-telegram-bot==21.11.1
+pyrogram==2.0.106
+tgcrypto
 Pillow>=11.2.1
+flask>=3.0.0
