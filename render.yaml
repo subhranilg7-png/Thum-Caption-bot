@@ -5,7 +5,9 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: python thumbnail_bot.py
     envVars:
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
       - key: BOT_TOKEN
-        sync: false          # you will paste this in the Render dashboard
-      - key: WEBHOOK_URL
-        sync: false          # you will paste this after first deploy (see instructions)
+        sync: false
